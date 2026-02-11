@@ -1,26 +1,27 @@
 import { Link } from 'react-router-dom';
+import { FaRocket, FaStar, FaHandshake, FaUsers } from 'react-icons/fa';
 
 const About = () => {
   const values = [
     {
       title: "Innovation",
       description: "We embrace cutting-edge technologies and creative approaches to solve complex problems.",
-      icon: "🚀"
+      icon: FaRocket
     },
     {
       title: "Excellence",
       description: "We deliver high-quality solutions that exceed expectations and drive measurable results.",
-      icon: "⭐"
+      icon: FaStar
     },
     {
       title: "Integrity",
       description: "We operate with transparency, honesty, and ethical principles in all our dealings.",
-      icon: "🤝"
+      icon: FaHandshake
     },
     {
       title: "Collaboration",
       description: "We believe in the power of teamwork and partnerships to achieve extraordinary outcomes.",
-      icon: "🤝"
+      icon: FaUsers
     }
   ];
 
@@ -117,7 +118,9 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-4xl mb-4">{value.icon}</div>
+                <div className="flex justify-center mb-4">
+                  <value.icon className="text-4xl text-blue-600" />
+                </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>

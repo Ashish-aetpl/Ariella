@@ -29,8 +29,8 @@ const Services = () => {
               to={`/services/${service.id}`}
               className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
-              <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">
-                {service.icon}
+              <div className="text-5xl mb-6 group-hover:scale-110 transition-transform text-blue-600">
+                <service.icon />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
                 {service.title}

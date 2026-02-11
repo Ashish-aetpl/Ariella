@@ -1,9 +1,11 @@
+import { FaLaptopCode, FaMobileAlt, FaGlobe, FaSync, FaServer, FaMicroscope, FaGlobeAmericas, FaBolt, FaHandshake } from 'react-icons/fa';
+
 export const servicesData = [
   {
     id: 'software-development',
     title: 'Software Development',
     description: 'Comprehensive software solutions including development, application engineering, testing, deployment, maintenance, and support.',
-    icon: '💻',
+    icon: FaLaptopCode,
     features: [
       'Custom Application Development',
       'Enterprise Software Solutions',
@@ -17,7 +19,7 @@ export const servicesData = [
     id: 'mobile-applications',
     title: 'Mobile Application Development',
     description: 'Native, hybrid, and cross-platform mobile app development for Android, iOS, and emerging platforms.',
-    icon: '📱',
+    icon: FaMobileAlt,
     features: [
       'Native iOS & Android Apps',
       'Cross-Platform Solutions',
@@ -31,7 +33,7 @@ export const servicesData = [
     id: 'web-solutions',
     title: 'Web Solutions & Cloud Platforms',
     description: 'Design, development, hosting, and management of web portals, SaaS platforms, and cloud-based systems.',
-    icon: '🌐',
+    icon: FaGlobe,
     features: [
       'Web Portal Development',
       'SaaS Platform Design',
@@ -45,7 +47,7 @@ export const servicesData = [
     id: 'digital-transformation',
     title: 'Digital Transformation & IT Consulting',
     description: 'Strategic digital transformation services, IT consulting, enterprise architecture, and system integration.',
-    icon: '🔄',
+    icon: FaSync,
     features: [
       'Digital Strategy Consulting',
       'Enterprise Architecture',
@@ -59,7 +61,7 @@ export const servicesData = [
     id: 'it-infrastructure',
     title: 'IT Infrastructure & Data Center Solutions',
     description: 'Hardware sizing, IT infrastructure planning, data center solutions, cloud and private cloud infrastructure.',
-    icon: '🏗️',
+    icon: FaServer,
     features: [
       'Infrastructure Planning',
       'Data Center Solutions',
@@ -73,7 +75,7 @@ export const servicesData = [
     id: 'research-innovation',
     title: 'Research & Innovation',
     description: 'Research, innovation, prototyping, and skill-based ICT solution development for emerging challenges.',
-    icon: '🔬',
+    icon: FaMicroscope,
     features: [
       'Research & Development',
       'Innovation Prototyping',
@@ -87,7 +89,7 @@ export const servicesData = [
     id: 'societal-solutions',
     title: 'Societal & Government Solutions',
     description: 'Technology-driven solutions for societal, governmental, industrial, and global digital transformation.',
-    icon: '🌍',
+    icon: FaGlobeAmericas,
     features: [
       'Government Digital Solutions',
       'Industrial Transformation',
@@ -101,7 +103,7 @@ export const servicesData = [
     id: 'ev-infrastructure',
     title: 'Electric Vehicle Solutions',
     description: 'EV charging infrastructure, smart charging platforms, energy management systems, and IoT integration.',
-    icon: '⚡',
+    icon: FaBolt,
     features: [
       'EV Charging Infrastructure',
       'Smart Charging Platforms',
@@ -115,7 +117,7 @@ export const servicesData = [
     id: 'project-consultancy',
     title: 'Projects & Consultancy Services',
     description: 'Projects, contracts, tenders, and consultancy services for government organizations, PSUs, private enterprises, and international organizations.',
-    icon: '🤝',
+    icon: FaHandshake,
     features: [
       'Project Management',
       'Contract Services',

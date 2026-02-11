@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,19 +41,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: "📧",
+      icon: FaEnvelope,
       title: "Email",
       content: "info@ariellagenz.com",
       description: "Send us an email anytime"
     },
     {
-      icon: "📱",
+      icon: FaPhone,
       title: "Phone",
       content: "+91 98765 43210",
       description: "Mon-Fri from 9am to 6pm"
     },
     {
-      icon: "📍",
+      icon: FaMapMarkerAlt,
       title: "Office",
       content: "Technology Park, Bangalore",
       description: "Visit us for a meeting"
@@ -221,7 +222,9 @@ const Contact = () => {
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="text-3xl mr-4">{info.icon}</div>
+                    <div className="text-3xl mr-4 text-blue-600">
+                      <info.icon />
+                    </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">{info.title}</h3>
                       <p className="text-gray-900 font-medium mb-1">{info.content}</p>
