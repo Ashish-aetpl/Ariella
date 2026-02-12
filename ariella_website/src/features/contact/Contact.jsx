@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import logo from '../../assets/logo.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -78,7 +79,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <div className="flex justify-center mb-8">
             <img 
-              src="/src/assets/logo.png" 
+              src={logo}
               alt="Ariella GenZ Innovations" 
               className="h-16 w-auto"
             />

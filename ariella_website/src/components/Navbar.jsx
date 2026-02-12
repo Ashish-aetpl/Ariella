@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 group">
               <img 
-                src="/src/assets/logo.png" 
+                src={logo} 
                 alt="Ariella GenZ Innovations" 
                 className="h-12 w-auto transform group-hover:scale-105 transition-transform duration-300"
               />

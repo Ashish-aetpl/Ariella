@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { servicesData } from './servicesData';
+import logo from '../../assets/logo.png';
 
 const ServiceDetail = () => {
   const { serviceId } = useParams();
@@ -44,7 +45,7 @@ const ServiceDetail = () => {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="flex items-center mb-6">
             <img 
-              src="/src/assets/logo.png" 
+              src={logo} 
               alt="Ariella GenZ Innovations" 
               className="h-12 w-auto mr-4"
             />

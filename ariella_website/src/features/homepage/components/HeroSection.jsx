@@ -43,7 +43,6 @@ const HeroSection = () => {
             >
               <span className="relative z-10">Get Started</span>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative z-10 group-hover:text-blue-600 transition-colors duration-300">Get Started</span>
             </Link>
           </div>
 

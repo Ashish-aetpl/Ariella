@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { servicesData } from './servicesData';
+import logo from '../../assets/logo.png';
 
 const Services = () => {
   return (
@@ -8,7 +9,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <div className="flex justify-center mb-8">
             <img 
-              src="/src/assets/logo.png" 
+              src={logo} 
               alt="Ariella GenZ Innovations" 
               className="h-16 w-auto"
             />
