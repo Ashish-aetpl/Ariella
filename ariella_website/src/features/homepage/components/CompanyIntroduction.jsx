@@ -30,7 +30,7 @@ const CompanyIntroduction = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     Pioneering Digital Excellence
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-justify">
+                  <p className="text-gray-600 leading-relaxed">
                     Ariella GenZ Innovations Private Limited is a technology-driven startup dedicated to delivering innovative solutions that transform businesses and societies. We combine cutting-edge technology with creative thinking to solve complex challenges.
                   </p>
                 </div>
@@ -43,7 +43,7 @@ const CompanyIntroduction = () => {
                   <FaBriefcase className="text-2xl text-white" />
                 </div>
                 <div>
-                  <p className="text-gray-600 leading-relaxed text-justify">
+                  <p className="text-gray-600 leading-relaxed">
                     Our expertise spans software development, mobile applications, web solutions, digital transformation, and emerging technologies like Electric Vehicle infrastructure. We serve government organizations, private enterprises, and international clients with customized, scalable solutions.
                   </p>
                 </div>
@@ -56,7 +56,7 @@ const CompanyIntroduction = () => {
                   <FaSeedling className="text-2xl text-white" />
                 </div>
                 <div>
-                  <p className="text-gray-600 leading-relaxed text-justify">
+                  <p className="text-gray-600 leading-relaxed">
                     With a focus on research, innovation, and sustainable development, we are committed to driving digital transformation across industries and creating lasting impact through technology.
                   </p>
                 </div>

@@ -34,7 +34,7 @@ const Navbar = () => {
               <img 
                 src="/src/assets/logo.png" 
                 alt="Ariella GenZ Innovations" 
-                className="h-10 w-auto transform group-hover:scale-105 transition-transform duration-300"
+                className="h-12 w-auto transform group-hover:scale-105 transition-transform duration-300"
               />
             </Link>
           </div>

@@ -43,19 +43,19 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: "Email",
-      content: "info@ariellagenz.com",
+      content: "info@ariella.com",
       description: "Send us an email anytime"
     },
     {
       icon: FaPhone,
       title: "Phone",
-      content: "+91 98765 43210",
+      content: "+91 9891002709",
       description: "Mon-Fri from 9am to 6pm"
     },
     {
       icon: FaMapMarkerAlt,
       title: "Office",
-      content: "Technology Park, Bangalore",
+      content: "Mayur Vihar, Delhi",
       description: "Visit us for a meeting"
     }
   ];
