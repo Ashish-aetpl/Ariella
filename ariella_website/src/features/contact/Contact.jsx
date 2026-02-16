@@ -44,7 +44,7 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: "Email",
-      content: "info@ariella.com",
+      content: "info@ariella.in",
       description: "Send us an email anytime"
     },
     {
@@ -151,7 +151,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 9891002709"
                     />
                   </div>
                   <div>

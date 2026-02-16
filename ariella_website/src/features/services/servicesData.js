@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaMobileAlt, FaGlobe, FaSync, FaServer, FaMicroscope, FaGlobeAmericas, FaBolt, FaHandshake } from 'react-icons/fa';
+import { FaLaptopCode, FaMobileAlt, FaGlobe, FaSync, FaServer, FaMicroscope, FaGlobeAmericas, FaBolt, FaHandshake, FaBrain } from 'react-icons/fa';
 
 export const servicesData = [
   {
@@ -126,5 +126,22 @@ export const servicesData = [
       'International Projects'
     ],
     detailedDescription: 'Execute complex projects with confidence through our comprehensive consultancy services. We support government organizations, PSUs, private enterprises, and international bodies with expert project management and strategic consulting.'
+  },
+  {
+    id: 'ai-services',
+    title: 'AI & Machine Learning Services',
+    description: 'End-to-end AI engineering, consulting, and managed support services powered by a Ph.D.-led team and 20+ AI specialists.',
+    icon: FaBrain,
+    features: [
+      'AI Strategy & Consulting',
+      'Data Engineering & Conditioning',
+      'Machine Learning & Deep Learning',
+      'Generative AI & LLM Solutions',
+      'MLOps & AI Deployment',
+      'AI Managed Services & 24×7 Support',
+      'RAG & Private GPT Solutions',
+      'Enterprise AI Chatbots & Copilots'
+    ],
+    detailedDescription: 'Ariella GenZ Innovations delivers comprehensive AI and Machine Learning services backed by a Ph.D.-led AI practice and a 20-member AI workforce. We specialize in turning raw data into reliable, production-grade AI systems for enterprises, OEMs, and global system integrators. Our expertise spans the entire AI lifecycle - from strategy and data conditioning to model development, deployment, and 24×7 managed support. With strong experience serving Government, PSU, and enterprise clients, we are your trusted partner for AI transformation. Our services include AI readiness assessment, use-case discovery, data engineering, ML/DL model development, Generative AI solutions (RAG, Private GPT, LLM fine-tuning), MLOps, and comprehensive AI managed services. We work with leading technologies including OpenAI, Llama, Mistral, PyTorch, TensorFlow, Hugging Face, LangChain, and deploy on AWS, Azure, GCP, and on-premise infrastructure. Special focus on secure on-prem GenAI for government and regulated sectors.'
   }
 ];
