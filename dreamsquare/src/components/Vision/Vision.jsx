@@ -11,8 +11,9 @@ export default function Vision() {
           </h2>
           <p className="vision-desc">
             Our vision is to become a trusted and respected real estate brand known for
-            transparency, quality, and sustainable growth — redefining the very experience
-            of property ownership.
+            transparency, quality, and sustainable growth across India. We aim to redefine
+            the real estate experience by building spaces that offer not just physical value,
+            but emotional trust and long-term returns for homeowners, investors, and partners.
           </p>
         </div>
 

@@ -30,12 +30,16 @@ export default function Footer() {
         <div className="footer-col reveal">
           <h4>Connect</h4>
           <ul>
-            <li>info@dreamsquare.in</li>
+            <li>info@dreamsquare.com</li>
             <li>+91 98765 43210</li>
             <li style={{ marginTop: '16px', lineHeight: '1.8' }}>
-              123, Business District,<br />
-              Mumbai, Maharashtra,<br />
-              India — 400001
+              C Tower, Dev Residency,<br />
+              Near DeNobili School, Jay Prakash Nagar,<br />
+              Dhanbad, Jharkhand
+            </li>
+            <li style={{ marginTop: '12px', lineHeight: '1.8' }}>
+              Max Square, Sector 134,<br />
+              Noida, Uttar Pradesh
             </li>
           </ul>
         </div>

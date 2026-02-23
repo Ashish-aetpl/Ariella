@@ -8,14 +8,15 @@ export default function Philosophy() {
           <p className="section-label">Our Philosophy</p>
           <h2>More Than Structures —<br />We Build <em>Trust</em></h2>
           <p>
-            At Dream Square, our promise defines who we are and guides every project we undertake,
-            today and in the years to come. Every brick laid is a testament to our commitment to
-            transparency and integrity.
+            At Dream Square, our philosophy is rooted in the belief that real estate is not just
+            about creating physical spaces, but about shaping experiences, relationships, and
+            lasting value. Guided by deep industry insight and a people-centric approach, we are
+            committed to delivering reliable, value-driven real estate solutions.
           </p>
           <p>
-            We aim to redefine the real estate experience by building spaces that offer not just
-            physical value, but emotional trust and long-term returns for homeowners, investors,
-            and partners across India.
+            Our leadership seamlessly integrates technical expertise with structured management
+            practices — ensuring disciplined project execution, clear communication, financial
+            transparency, and adherence to timelines.
           </p>
           <div className="stats-row">
             <div className="stat">
@@ -23,8 +24,8 @@ export default function Philosophy() {
               <span className="stat-label">Transparency</span>
             </div>
             <div className="stat">
-              <span className="stat-num">5+</span>
-              <span className="stat-label">Years Vision</span>
+              <span className="stat-num">15+</span>
+              <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat">
               <span className="stat-num">Pan</span>
