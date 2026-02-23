@@ -1,0 +1,23 @@
+.marquee-wrap { overflow: hidden; background: var(--gold); padding: 18px 0; }
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 28px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: var(--dark);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: rgba(13,13,13,0.35); }
