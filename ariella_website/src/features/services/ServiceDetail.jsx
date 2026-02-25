@@ -44,11 +44,6 @@ const ServiceDetail = () => {
         {/* Service Header */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <div className="flex items-center mb-6">
-            <img 
-              src={logo} 
-              alt="Ariella GenZ Innovations" 
-              className="h-12 w-auto mr-4"
-            />
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">{service.title}</h1>
               <p className="text-xl text-gray-600 text-justify">{service.description}</p>

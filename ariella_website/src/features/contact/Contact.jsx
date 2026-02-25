@@ -73,17 +73,10 @@ const Contact = () => {
   ];
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-10 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="flex justify-center mb-8">
-            <img 
-              src={logo}
-              alt="Ariella GenZ Innovations" 
-              className="h-16 w-auto"
-            />
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Contact Us
           </h1>
@@ -119,7 +112,6 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="John Doe"
                     />
                   </div>
                   <div>
@@ -134,7 +126,6 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="john@example.com"
                     />
                   </div>
                 </div>
@@ -151,7 +142,6 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="+91 9891002709"
                     />
                   </div>
                   <div>
@@ -165,7 +155,6 @@ const Contact = () => {
                       value={formData.company}
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="Your Company"
                     />
                   </div>
                 </div>
@@ -259,7 +248,7 @@ const Contact = () => {
               <p className="text-blue-100 mb-4 text-justify">
                 For urgent technical support, please call our emergency hotline.
               </p>
-              <div className="text-2xl font-bold">+91 98765 43210</div>
+              <div className="text-2xl font-bold">+91 9891002709</div>
             </div>
           </div>
         </div>
