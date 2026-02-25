@@ -1,10 +1,43 @@
 import { Link } from 'react-router-dom';
 import { servicesData } from './servicesData';
 import logo from '../../assets/logo.png';
+import SEO from '../../components/SEO';
+
+const servicesStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://ariella.in/services#webpage',
+  url: 'https://ariella.in/services',
+  name: 'Technology Services — Ariella GenZ Innovations',
+  description: 'Explore our full range of enterprise technology services including AI & ML, software development, mobile apps, EV infrastructure, digital transformation and more.',
+  isPartOf: { '@id': 'https://ariella.in/#website' },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ariella.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://ariella.in/services' },
+    ],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: servicesData.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: s.title,
+      url: `https://ariella.in/services/${s.id}`,
+    })),
+  },
+};
 
 const Services = () => {
   return (
     <div className="py-10 bg-gray-50">
+      <SEO
+        title="Our Technology Services — AI, Software, EV & More"
+        description="Comprehensive enterprise technology services from Ariella GenZ Innovations: AI & Machine Learning, software development, mobile apps, web platforms, EV infrastructure, IT consulting, and government solutions."
+        canonical="/services"
+        structuredData={servicesStructuredData}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

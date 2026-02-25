@@ -1,0 +1,23 @@
+{
+  "name": "Ariella GenZ Innovations",
+  "short_name": "Ariella GenZ",
+  "description": "Enterprise AI, Software & Digital Transformation Solutions — India",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050d1f",
+  "theme_color": "#1d6ce8",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

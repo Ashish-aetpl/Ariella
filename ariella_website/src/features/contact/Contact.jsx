@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from '../../assets/logo.png';
+import SEO from '../../components/SEO';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -72,8 +73,31 @@ const Contact = () => {
     "Other"
   ];
 
+  const contactStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    '@id': 'https://ariella.in/contact#webpage',
+    url: 'https://ariella.in/contact',
+    name: 'Contact Ariella GenZ Innovations — Get a Free Consultation',
+    description: 'Contact Ariella GenZ Innovations for AI, software development, digital transformation, and EV infrastructure solutions. Get a free discovery consultation today.',
+    isPartOf: { '@id': 'https://ariella.in/#website' },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ariella.in/' },
+        { '@type': 'ListItem', position: 2, name: 'Contact Us', item: 'https://ariella.in/contact' },
+      ],
+    },
+  };
+
   return (
     <div className="py-10 bg-gray-50">
+      <SEO
+        title="Contact Us — Get a Free Consultation"
+        description="Contact Ariella GenZ Innovations for AI, software development, digital transformation, and EV infrastructure solutions. Located in Mayur Vihar, Delhi, India. Free discovery call available."
+        canonical="/contact"
+        structuredData={contactStructuredData}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

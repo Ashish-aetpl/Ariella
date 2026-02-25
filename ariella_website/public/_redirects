@@ -1,0 +1,5 @@
+# Netlify SPA redirect — sends all routes to index.html so React Router handles them
+/*    /index.html   200
+
+# Redirect www to apex for canonical domain
+https://www.ariella.in/*  https://ariella.in/:splat  301!

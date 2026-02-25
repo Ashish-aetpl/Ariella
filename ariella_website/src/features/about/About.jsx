@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaRocket, FaStar, FaHandshake, FaUsers } from 'react-icons/fa';
 import logo from '../../assets/logo.png';
+import SEO from '../../components/SEO';
 
 const About = () => {
   const values = [
@@ -49,8 +50,32 @@ const About = () => {
     }
   ];
 
+  const aboutStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': 'https://ariella.in/about#webpage',
+    url: 'https://ariella.in/about',
+    name: 'About Ariella GenZ Innovations — Our Story, Mission & Team',
+    description: 'Learn about Ariella GenZ Innovations — our mission, vision, values, and the expert team driving enterprise AI and digital transformation across India.',
+    isPartOf: { '@id': 'https://ariella.in/#website' },
+    about: { '@id': 'https://ariella.in/#organization' },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ariella.in/' },
+        { '@type': 'ListItem', position: 2, name: 'About Us', item: 'https://ariella.in/about' },
+      ],
+    },
+  };
+
   return (
     <div className="py-10 bg-gray-50">
+      <SEO
+        title="About Us — Our Story, Mission & Expert Team"
+        description="Learn about Ariella GenZ Innovations — our mission, vision, values, and the expert AI & technology team driving enterprise digital transformation across India."
+        canonical="/about"
+        structuredData={aboutStructuredData}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

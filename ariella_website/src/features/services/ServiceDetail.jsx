@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { servicesData } from './servicesData';
 import logo from '../../assets/logo.png';
+import SEO from '../../components/SEO';
 
 const ServiceDetail = () => {
   const { serviceId } = useParams();
@@ -9,6 +10,7 @@ const ServiceDetail = () => {
   if (!service) {
     return (
       <div className="py-20 bg-gray-50">
+        <SEO title="Service Not Found" noIndex={true} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
           <p className="text-gray-600 mb-8">The service you're looking for doesn't exist.</p>
@@ -23,8 +25,41 @@ const ServiceDetail = () => {
     );
   }
 
+  const serviceStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `https://ariella.in/services/${service.id}#webpage`,
+    url: `https://ariella.in/services/${service.id}`,
+    name: `${service.title} | Ariella GenZ Innovations`,
+    description: service.description,
+    isPartOf: { '@id': 'https://ariella.in/#website' },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ariella.in/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://ariella.in/services' },
+        { '@type': 'ListItem', position: 3, name: service.title, item: `https://ariella.in/services/${service.id}` },
+      ],
+    },
+    mainEntity: {
+      '@type': 'Service',
+      '@id': `https://ariella.in/services/${service.id}#service`,
+      name: service.title,
+      description: service.detailedDescription,
+      provider: { '@id': 'https://ariella.in/#organization' },
+      areaServed: 'IN',
+      url: `https://ariella.in/services/${service.id}`,
+    },
+  };
+
   return (
     <div className="py-20 bg-gray-50">
+      <SEO
+        title={`${service.title} — Enterprise Solutions India`}
+        description={`${service.description} Ariella GenZ Innovations delivers production-grade ${service.title} for enterprises and governments across India.`}
+        canonical={`/services/${service.id}`}
+        structuredData={serviceStructuredData}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="mb-8">

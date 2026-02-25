@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | Ariella GenZ Innovations</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        background: #050d1f;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        padding: 2rem;
+      }
+      h1 { font-size: 6rem; font-weight: 800; background: linear-gradient(135deg,#1d6ce8,#00c2ff); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+      h2 { font-size: 1.5rem; font-weight: 600; margin: 0.5rem 0 1rem; color: #e2e8f0; }
+      p  { color: #94a3b8; margin-bottom: 2rem; max-width: 400px; margin-left: auto; margin-right: auto; }
+      a  {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background: linear-gradient(135deg, #1d6ce8, #0f4fa8);
+        color: #fff;
+        font-weight: 600;
+        border-radius: 0.75rem;
+        text-decoration: none;
+        box-shadow: 0 6px 24px rgba(29,108,232,0.45);
+      }
+    </style>
+    <!-- Redirect to app after 0ms — React Router will take over -->
+    <script>
+      // Store the path so React can redirect after hydration
+      sessionStorage.setItem('redirectPath', window.location.pathname + window.location.search);
+      window.location.replace('/');
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you are looking for does not exist or has been moved.</p>
+      <a href="/">Go Back Home</a>
+    </div>
+  </body>
+</html>
