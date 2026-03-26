@@ -181,17 +181,6 @@ const Footer = () => {
               ))}
             </ul>
 
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-250 hover:-translate-y-0.5"
-              style={{
-                background: 'linear-gradient(135deg, #1d6ce8 0%, #0f4fa8 100%)',
-                boxShadow: '0 4px 16px rgba(29,108,232,0.35)',
-              }}
-            >
-              Start a Project
-              <FiArrowRight size={13} />
-            </Link>
           </div>
         </div>
 

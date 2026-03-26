@@ -57,7 +57,7 @@ const Contact = () => {
     {
       icon: FaMapMarkerAlt,
       title: "Office",
-      content: "Mayur Vihar, Delhi",
+      content: "306, Third Floor, Plot no. 11, LSC Pocket-B, Durga Complex, Mayur Vihar Phase-II, Delhi-110091",
       description: "Visit us for a meeting"
     }
   ];
