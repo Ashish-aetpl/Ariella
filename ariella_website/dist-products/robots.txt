@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or build artifacts (none currently, but good practice)
+Disallow: /src/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://ariella.in/sitemap.xml
+
+# Crawl delay for polite bots
+Crawl-delay: 10

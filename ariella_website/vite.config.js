@@ -8,4 +8,21 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
   },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: 'index.html'
+    }
+  }
+})
+
+// Product build configuration
+export const productConfig = defineConfig({
+  plugins: [react(), tailwindcss()],
+  build: {
+    outDir: 'dist-products',
+    rollupOptions: {
+      input: 'index-products.html'
+    }
+  }
 })

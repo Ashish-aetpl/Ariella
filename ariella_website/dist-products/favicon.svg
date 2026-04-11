@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#050d1f"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1d6ce8"/>
+      <stop offset="100%" stop-color="#00c2ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Letter A stylised with gradient -->
+  <path d="M32 12 L50 52 H43 L39 42 H25 L21 52 H14 L32 12Z M27.5 36 H36.5 L32 23Z" fill="url(#g)"/>
+</svg>
